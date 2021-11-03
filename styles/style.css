@@ -1,0 +1,37 @@
+@font-face {
+	font-family: 'Roboto'; /*TEMP*/
+	src: url('../assets/fonts/Roboto.ttf');
+}
+
+:root {
+    --margin: 8px;
+    --btn-size: 64px;
+    --border-radius: 6px;
+    --transition: .4s;
+
+    --slider-size: 25px;
+
+    --black: hsl(0, 0%, 8%);
+    --gray: hsl(0, 0%, 25%);
+
+    --gray-blue-20: hsla(200, 15%, 60%, .2);
+	--gray-blue-50: hsla(200, 15%, 60%, .5);
+    --gray-blue-75: hsla(200, 15%, 60%, .75);
+    --gray-blue: hsl(200, 15%, 60%);
+
+    /*...*/
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+
+    margin: 0;
+    overflow: hidden;
+
+    font-family: 'Roboto';
+    font-size: 32px;
+    color: var(--black);
+
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}

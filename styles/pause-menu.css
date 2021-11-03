@@ -1,0 +1,24 @@
+.pause-menu-btns {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    transform: translateX(-100%);
+
+    padding: var(--margin); 
+
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0));
+
+    z-index: 2;
+}
+
+.pause-menu-speed-slider-panel {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+
+    transform: translateX(-50%) translateY(-100%);
+}

@@ -1,0 +1,32 @@
+.hexagon {
+    --hex-width: calc(var(--btn-size) / 2 * 1.732050807568877); /*sqrt(3) ~ 1.732050807568877*/
+    
+    width: var(--hex-width) !important;
+    height: calc(var(--btn-size) / 2) !important;
+
+    margin: 16.00px auto !important;
+    border-radius: 0 !important;
+
+    line-height: calc(var(--btn-size) / 2);
+}
+  
+.hexagon:before,
+.hexagon:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 0;
+    border-left: calc(var(--hex-width) / 2) solid transparent !important;
+    border-right: calc(var(--hex-width) / 2) solid transparent !important;
+}
+  
+.hexagon:before {
+    bottom: 100%;
+    border-bottom: 16.00px solid var(--gray-blue-50);
+}
+  
+.hexagon:after {
+    top: 100%;
+    width: 0;
+    border-top: 16.00px solid var(--gray-blue-50);
+}

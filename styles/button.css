@@ -1,0 +1,28 @@
+.button {
+    position: relative;
+    width: var(--btn-size);
+    height: var(--btn-size);
+    margin: var(--margin);
+
+    text-align: center;
+    line-height: var(--btn-size);
+
+    border-radius: 50%;
+    border-color: var(--gray-blue-50);
+
+    flex-shrink: 0;
+
+    background-color: var(--gray-blue-50);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--gray-blue-75);
+    border-color: var(--gray-blue-75);
+}
+
+.button:active {
+    background-color: var(--gray-blue);
+    border-color: var(--gray-blue);
+    color: white;
+}
